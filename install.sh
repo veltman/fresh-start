@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # Ubuntu 14.04
 # Updated February 3, 2015
-
-#!/bin/bash
 
 # Move into home directory
 cd ~/
