@@ -1,6 +1,6 @@
 # Fresh Start
 
-A full bootstrap script for a new installation of Ubuntu Desktop.
+A full bootstrap script for a new installation of Ubuntu Desktop 15.04.
 
 Installs:
 
@@ -12,17 +12,16 @@ Installs:
 * QGIS
 * GRASS
 * PostgreSQL
-* TileMill
 * Chromium
+* Spotify
 * AWS CLI tools
 * virtualenv
-* Sublime Text 2
+* Atom
 * Local webserver
 
 Configures:
 
 * Git
-* Sublime Text 2
 * Privacy settings
 * Projects folder
 * Launcher icons
