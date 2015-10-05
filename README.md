@@ -17,12 +17,14 @@ Installs:
 * AWS CLI tools
 * virtualenv
 * Atom
-* Local webserver
 
 Configures:
 
 * Git
 * Privacy settings
-* Projects folder
 * Launcher icons
 * Bookmarks
+
+Also adds a basic static webserver with a root directory of `~/projects`.
+
+Customize the git user name and email in `install.sh` to your own.
