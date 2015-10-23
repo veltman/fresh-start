@@ -12,10 +12,10 @@ GIT_USER_EMAIL=noah@noahveltman.com
 
 # Add QGIS repo
 sudo add-apt-repository -s "deb http://qgis.org/debian trusty main"
- 
+
 # Update/upgrade
 sudo apt-get update && sudo apt-get upgrade
- 
+
 # Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, QGIS, GRASS, PostgreSQL, TileMill, Chromium
 # npm comes with nodejs package now
 # force-yes because QGIS repo is untrusted
@@ -34,7 +34,7 @@ sudo apt-get install postgis osm2pgsql
 wget https://github.com/atom/atom/releases/download/v1.0.19/atom-amd64.deb
 sudo dpkg --install atom-amd64.deb
 rm atom-amd64.deb
- 
+
 # Set Atom as default editor
 sudo sed -i 's@gedit.desktop@atom.desktop@g' /usr/share/applications/defaults.list
 
@@ -50,6 +50,9 @@ git config --global push.default current
 cp .bash_aliases ~/
 
 # Install Spotify
+# This doesn't work right now because of a libgcrypt update in 15.04,
+# so you have to install the test version, but that'll probably be fixed
+# soon so I'm leaving this code
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
@@ -81,4 +84,6 @@ sudo chmod 755 /etc/rc.local
 
 # To dos
 ## Private key and AWS configuration file
+## Dropbox
+## Set up 1Password Anywhere with Dropbox
 ## MySQL?
