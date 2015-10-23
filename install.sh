@@ -35,6 +35,12 @@ wget https://github.com/atom/atom/releases/download/v1.0.19/atom-amd64.deb
 sudo dpkg --install atom-amd64.deb
 rm atom-amd64.deb
 
+# 1PasswordAnywhere via Dropbox using the `1pass` command
+# Configure this to set up the `1pass` alias
+# Basic HTTP server for
+sudo npm install http-server -g
+
+
 # Set Atom as default editor
 sudo sed -i 's@gedit.desktop@atom.desktop@g' /usr/share/applications/defaults.list
 
@@ -67,23 +73,12 @@ gsettings set com.canonical.Unity.Launcher favorites \
 
 # Create projects folder and server
 mkdir ~/projects/
-cp server.js ~/projects/
 
 # Add ~/projects to bookmarks
 echo "file:///home/$USER/projects" >> ~/.config/gtk-3.0/bookmarks
 
-cd ~/projects/
-npm install express serve-index
-sudo npm install forever -g
-sudo forever start ~/projects/server.js
-sudo chmod a+w /etc/rc.local
-sudo sed -i '$d' /etc/rc.local
-echo "forever start ~/projects/server.js" >> /etc/rc.local
-echo "exit 0" >> /etc/rc.local
-sudo chmod 755 /etc/rc.local
-
 # To dos
+## Start http-server on projects folder on port 80 at startup
 ## Private key and AWS configuration file
 ## Dropbox
-## Set up 1Password Anywhere with Dropbox
 ## MySQL?
