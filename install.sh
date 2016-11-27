@@ -54,6 +54,9 @@ git config --global user.name $GIT_USER_NAME
 git config --global user.email $GIT_USER_EMAIL
 git config --global push.default current
 
+# No diff paging
+git config --global core.pager cat
+
 # Copy aliases
 cp .bash_aliases ~/
 
