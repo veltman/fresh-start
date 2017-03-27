@@ -12,8 +12,8 @@ GIT_USER_EMAIL=noah@noahveltman.com
 # Update/upgrade
 sudo apt-get update && sudo apt-get upgrade
 
-# Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, PostgreSQL, Chromium
-sudo apt-get install --yes nodejs npm vlc browser-plugin-vlc git gimp \
+# Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, PostgreSQL, Chromium, Inkscape
+sudo apt-get install --yes nodejs npm vlc browser-plugin-vlc git gimp inkscape \
 python-pip chromium-browser ruby postgresql postgresql-contrib python-gpgme
 
 # Install QGIS
@@ -85,5 +85,6 @@ echo "file:///home/$USER/projects" >> ~/.config/gtk-3.0/bookmarks
 ## oh-my-zsh config
 ## Install hub? https://github.com/github/hub
 ## Start http-server on projects folder on port 80 at startup?
+## Docker?
 ## Dropbox?
 ## MySQL?
