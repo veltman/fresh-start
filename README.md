@@ -19,6 +19,8 @@ Installs:
 * virtualenv
 * Atom
 * Static webserver
+* Inkscape
+* Gistup
 * oh-my-zsh
 
 Configures:
