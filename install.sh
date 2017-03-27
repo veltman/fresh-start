@@ -43,8 +43,8 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # Fix Node legacy nonsense
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
-# Basic HTTP server
-sudo npm install http-server -g
+# Global npm utils: http-server, gistup
+sudo npm install http-server gistup -g
 
 # Set Atom as default editor
 sudo sed -i 's@gedit.desktop@atom.desktop@g' /usr/share/applications/defaults.list
@@ -83,6 +83,7 @@ echo "file:///home/$USER/projects" >> ~/.config/gtk-3.0/bookmarks
 # To dos
 ## Credentials - SSH key, AWS config
 ## oh-my-zsh config
+## Install hub? https://github.com/github/hub
 ## Start http-server on projects folder on port 80 at startup?
 ## Dropbox?
 ## MySQL?
