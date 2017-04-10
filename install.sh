@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt-get upgrade
 
 # Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, PostgreSQL, Chromium, Inkscape
 sudo apt-get install --yes nodejs npm vlc browser-plugin-vlc git gimp inkscape \
-python-pip chromium-browser ruby postgresql postgresql-contrib python-gpgme
+python-pip ruby postgresql postgresql-contrib python-gpgme
 
 # Install QGIS
 # Per https://www.qgis.org/en/site/forusers/alldownloads.html
@@ -70,18 +70,22 @@ sudo apt-get install spotify-client
 # Turn off online searching in Dash
 gsettings set com.canonical.Unity.Lenses remote-content-search none
 
-# Set desired launcher icons
-gsettings set com.canonical.Unity.Launcher favorites \
-"['application://org.gnome.Nautilus.desktop', 'application://chromium-browser.desktop', 'application://atom.desktop', 'application://gnome-terminal.desktop', 'application://qgis.desktop', 'application://spotify.desktop', 'application://firefox.desktop', 'application://org.gnome.Software.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
-
 # Create projects folder and server
 mkdir ~/projects/
 
 # Add ~/projects to bookmarks
 echo "file:///home/$USER/projects" >> ~/.config/gtk-3.0/bookmarks
 
+# Manually install Google Chrome here
+# TODO add a prompt/wait for it
+# xdg-open https://www.google.com/chrome/browser/desktop/index.html
+
+# Set desired launcher icons
+gsettings set com.canonical.Unity.Launcher favorites \
+"['application://org.gnome.Nautilus.desktop', 'application://chromium-browser.desktop', 'application://atom.desktop', 'application://gnome-terminal.desktop', 'application://qgis.desktop', 'application://spotify.desktop', 'application://firefox.desktop', 'application://org.gnome.Software.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
+
 # To dos
-## Credentials - SSH key, AWS config
+## Managing credentials (SSH key, AWS keys)
 ## oh-my-zsh config
 ## Install hub? https://github.com/github/hub
 ## Start http-server on projects folder on port 80 at startup?
