@@ -12,7 +12,7 @@ GIT_USER_EMAIL=noah@noahveltman.com
 # Update/upgrade
 sudo apt-get update && sudo apt-get upgrade
 
-# Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, PostgreSQL, Chromium, Inkscape
+# Install Node, NPM, VLC, Git, Gimp, Pip, Ruby, PostgreSQL, Inkscape
 sudo apt-get install --yes nodejs npm vlc browser-plugin-vlc git gimp inkscape \
 python-pip ruby postgresql postgresql-contrib python-gpgme
 
@@ -82,7 +82,7 @@ echo "file:///home/$USER/projects" >> ~/.config/gtk-3.0/bookmarks
 
 # Set desired launcher icons
 gsettings set com.canonical.Unity.Launcher favorites \
-"['application://org.gnome.Nautilus.desktop', 'application://chromium-browser.desktop', 'application://atom.desktop', 'application://gnome-terminal.desktop', 'application://qgis.desktop', 'application://spotify.desktop', 'application://firefox.desktop', 'application://org.gnome.Software.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
+"['application://org.gnome.Nautilus.desktop', 'application://google-chrome.desktop', 'application://atom.desktop', 'application://gnome-terminal.desktop', 'application://qgis.desktop', 'application://spotify.desktop', 'application://firefox.desktop', 'application://org.gnome.Software.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
 
 # To dos
 ## Managing credentials (SSH key, AWS keys)
